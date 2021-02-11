@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>header}}
+</head>
+
+<body>
+  {{>navbar}}
+
+
+
+  <div class="container d-flex flex-column justify-content-center align-items-center ">
+    <form action="/register" method="POST">
+      <div class="form-group row">
+        <div class="col-sm-1-12 m-3">
+          <h2>Registration Form</h2>
+        </div>
+      </div>
+      <fieldset class="form-group  ">
+        
+          <div class="row">
+            <div class="col">
+              <input type="text" name="firstname" class="form-control m-1" placeholder="First name*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control m-1"  name="lastname" placeholder="Last name*">
+            </div>
+          </div>
+       
+
+     
+          <input type="email" class="form-control m-2" name="email" id="" aria-describedby="emailHelpId"
+            placeholder="Enter your email id">
+
+    
+      
+          <input type="number" class="form-control m-2" name="phone" id="" aria-describedby="helpId"
+            placeholder="Enter your Phone number">
+       
+ 
+      
+          <input type="number" class="form-control m-1" name="age" id="" aria-describedby="helpId"
+            placeholder="Enter your Age">
+
+      
+        <div class="form-check  form-check-inline">
+          <label class="form-check-label m-2">
+            <input class="form-check-input" type="radio" name="gender" id="" value="male"> male
+          </label>
+          <label class="form-check-label m-2">
+            <input class="form-check-input" type="radio" name="gender" id="" value="female"> female
+          </label>
+        </div>
+          <input type="password" class="form-control m-2" value="" name="password" id="" placeholder="Enter your password">
+     
+          <input type="password" class="form-control m-2" name="confirmpassword" id="" placeholder="confirm your password">
+       
+
+        <div class="form-group ">
+          <div class=" col-11 m-4">
+            <button type="submit" class="btn btn-outline-success  btn-lg btn-block" value="Register">Register</button>
+          </div>
+        </div>
+    </form>
+  </div>
+  </fieldset>
+
+</body>
+
+</html>
